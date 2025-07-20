@@ -61,7 +61,7 @@ For a full list of technical specifications, please refer to the [HDRM Datasheet
 
 ## Build Instructions
 
-We are working on a detailed "How to Build an HDRM" guide, which will be released on **1 August**.
+We are working on a detailed "How to Build an HDRM" guide, which will be released soon.
 
 ---
 
