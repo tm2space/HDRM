@@ -79,7 +79,70 @@ For a full list of technical specifications, please refer to the [HDRM Datasheet
 
 ## Build Instructions
 
-We are working on a detailed "How to Build an HDRM" guide, which will be released soon.
+Below is a detailed step-by-step guide to building the HDRM. Please refer to the referenced files and drawings for specifics. An even more extensive build document will be released soon.
+
+### Step 1: Manufacturing of Parts
+
+- **Mechanical Parts:**
+  - Fabricate all mechanical components as per the technical drawings in `Mechanical/PDF/` (e.g., [H-Base](Mechanical/PDF/SP-RMH-001%20v2.pdf), [H-Cover](Mechanical/PDF/SP-RMH-003.pdf), [H-Slider](Mechanical/PDF/SP-RMH-005%20v1.pdf), [H-Spring](Mechanical/PDF/SP-RMH-004.pdf), [H-Bush](Mechanical/PDF/SP-RHM-006%20v2.pdf), [H-nut](Mechanical/PDF/SP-RMH-002.pdf)).
+  - Use high-tolerance [CNC milling machining](https://en.wikipedia.org/wiki/CNC_milling) for all parts to ensure precise fits and reliable operation. Tolerances should match those specified in the drawings (maximum ±0.05 mm for critical features).
+  - Use the [3D models](Mechanical/STEP/) in `Mechanical/STEP/` for reference and [CAM programming](https://en.wikipedia.org/wiki/Computer-aided_manufacturing).
+  - Recommended material: [Aluminum 6061 T6](https://en.wikipedia.org/wiki/6061_aluminium_alloy) for all parts except the H-nut, which should be made from [stainless steel (SS)](https://en.wikipedia.org/wiki/Stainless_steel).
+- **PCB:**
+  - Manufacture the PCB using the [Gerber files](https://en.wikipedia.org/wiki/Gerber_format) in `Hardware/Horizontal_HDRM_V1 - Gerbers.zip`. Gerber files are standard manufacturing files for PCBs—simply send them to any PCB fabrication service.
+  - Use the schematic and layout in the [KiCad](https://kicad.org/) project (`Hardware/HDRM-kicad files.zip`) for reference. KiCad is a free, open-source tool for viewing and editing electronic designs.
+- **Electronics:**
+  - Procure all electronic components as listed in the [Bill of Materials (BOM)](Hardware/electronics%20BOM.xls`). The BOM is a spreadsheet listing all required parts, quantities, and recommended suppliers.
+
+### Step 2: Post-Processing
+
+- **Surface Treatment:**
+  - Apply [MoS₂ (Molybdenum Disulfide)](https://en.wikipedia.org/wiki/Molybdenum_disulfide) coating to all sliding/contact mechanical parts using the [Ion Exchange Coating method](https://en.wikipedia.org/wiki/Ion_exchange) to prevent [cold welding](https://en.wikipedia.org/wiki/Cold_welding) in space.
+  - Clean all parts to remove machining residues and contaminants.
+- **Inspection:**
+  - Verify all critical dimensions and tolerances per the drawings.
+  - Ensure all threaded holes and fits are within specification.
+
+### Step 3: Assembly
+
+- **Sub-Assembly:**
+  - Assemble mechanical subcomponents (e.g., slider, spring, bush) as per the assembly drawing (`Mechanical/STEP/SP-RHM-000.step`).
+  - Use appropriate fasteners and ensure correct orientation of all parts.
+- **PCB Assembly:**
+  - Solder all components onto the PCB as per the schematic and BOM.
+  - Attach solderable standoffs to the PCB at the designated locations. These allow the crimp terminals from the NiTi SMA wire to be screwed directly onto the PCB for secure electrical and mechanical connection.
+  - Inspect for solder bridges and cold joints.
+- **Final Assembly:**
+  - Integrate the PCB into the mechanical housing.
+  - Prepare the [NiTi SMA wire](https://en.wikipedia.org/wiki/Nickel_titanium): Cut to an exact length of 64 mm and crimp [NiTi SMA connectors](https://en.wikipedia.org/wiki/Nickel_titanium) on both ends, ensuring a 64 mm gap between the crimped ends for proper function.
+  - Attach the crimp terminals to the solderable standoffs on the PCB and screw them in place.
+  - Once the PCB is placed, insert and lock the screw that secures the compression spring (also called the bias spring).
+  - Place the bias spring between the body and the slider as shown in the assembly drawing.
+  - Connect wiring, the prepared NiTi SMA wire, and the [3-pin Molex pico-blade connector](https://www.molex.com/en-us/products/connectors/wire-to-board-connectors/pico-blade).
+  - Secure the cover and ensure all fasteners are torqued to spec.
+
+### Step 4: Inspection and Testing
+
+- **Functional Test:**
+  - Apply 5V DC and verify actuation (release mechanism should operate in <2 seconds).
+  - Check for smooth movement and no binding.
+- **Electrical Test:**
+  - Measure current draw (should be ~2A during actuation).
+  - Inspect for shorts or open circuits.
+- **Documentation:**
+  - Record serial numbers, test results, and any deviations.
+
+### Step 5: Integration
+
+- **Mounting:**
+  - Install the HDRM into your CubeSat structure as per your mission’s ICD.
+  - Connect the HDRM to the satellite’s power and control system.
+- **Final Verification:**
+  - Perform a final system-level test to ensure proper operation after integration.
+
+---
+
+> **Note:** A comprehensive, illustrated build manual with photos, tips, and troubleshooting will be released soon. Stay tuned for updates!
 
 ---
 
