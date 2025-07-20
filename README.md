@@ -12,7 +12,8 @@
 - ✅ Technical datasheet
 - [ ] Assembly images and renders *(work in progress)*
 - [ ] Demo video *(work in progress)*
-- [ ] Comprehensive documentation and project paper *(work in progress)*
+- [ ] Additional documentation *(work in progress)*
+- ✅ Technical project paper (see `Paper/Hold-Down and Release Mechanism for CubeSats.pdf`)
 
 
 # HDRM (Hold-Down and Release Mechanism) for CubeSats
