@@ -1,4 +1,14 @@
 
+
+<!-- Badges -->
+<p align="left">
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/Version-1.0-blue" alt="Version 1.0">
+  <img src="https://img.shields.io/badge/Open%20Source-Yes-brightgreen" alt="Open Source">
+  <img src="https://img.shields.io/badge/Docs-Complete-brightgreen" alt="Documentation Status">
+  <a href="https://drive.google.com/file/d/1jrq6xz-sBspF4B87YtnGfVCLkF1sXMoq/view?usp=sharing"><img src="https://img.shields.io/badge/Demo-Video-blueviolet" alt="Demo Video"></a>
+</p>
+
 **This repository contains everything required to build, modify, and manufacture a complete CubeSat Hold-Down and Release Mechanism (HDRM): all mechanical, electronic, and documentation files are included.**
 
 ---
@@ -31,6 +41,7 @@ This repository provides a fully open-source HDRM design specifically intended f
 
 ---
 
+
 ## Quick Links
 
 - [Image Previews](#image-previews)
@@ -39,6 +50,9 @@ This repository provides a fully open-source HDRM design specifically intended f
 - [Build Instructions](#build-instructions)
 - [Post-Processing and Surface Treatment](#post-processing-and-surface-treatment)
 - [FAQ](#faq)
+- [Safety Warnings](#safety-warnings)
+- [Troubleshooting](#troubleshooting)
+- [Glossary](#glossary)
 - [Folder Structure](#folder-structure)
 
 ---
@@ -75,7 +89,6 @@ For a full list of technical specifications, please refer to the [HDRM Datasheet
 
 [Watch the HDRM demonstration video (HDRM.mp4)](HDRM.mp4)
 
----
 
 ## Build Instructions
 
@@ -97,8 +110,8 @@ Below is a detailed step-by-step guide to building the HDRM. Please refer to the
 ### Step 2: Post-Processing
 
 - **Surface Treatment:**
-  - Apply [MoS₂ (Molybdenum Disulfide)](https://en.wikipedia.org/wiki/Molybdenum_disulfide) coating to all sliding/contact mechanical parts using the [Ion Exchange Coating method](https://en.wikipedia.org/wiki/Ion_exchange) to prevent [cold welding](https://en.wikipedia.org/wiki/Cold_welding) in space.
   - Clean all parts to remove machining residues and contaminants.
+  - Apply [MoS₂ (Molybdenum Disulfide)](https://en.wikipedia.org/wiki/Molybdenum_disulfide) coating—a dry lubricant—to all sliding/contact mechanical parts. MoS₂ can be applied using the [Ion Exchange Coating method](https://en.wikipedia.org/wiki/Ion_exchange) or with an aerosol spray (ensure uniform coverage for best results). This prevents [cold welding](https://en.wikipedia.org/wiki/Cold_welding) in space.
 - **Inspection:**
   - Verify all critical dimensions and tolerances per the drawings.
   - Ensure all threaded holes and fits are within specification.
@@ -140,41 +153,36 @@ Below is a detailed step-by-step guide to building the HDRM. Please refer to the
 - **Final Verification:**
   - Perform a final system-level test to ensure proper operation after integration.
 
----
+### Step 6: Launch Preparation
+- Ensure all components are securely fastened and torqued and that the HDRM is in the correct state for launch.
 
 > **Note:** A comprehensive, illustrated build manual with photos, tips, and troubleshooting will be released soon. Stay tuned for updates!
 
----
 
 ## Post-Processing and Surface Treatment
 
 For detailed post-processing information, refer to the file `HDRM-BOM.xlsx` included in this repository. Most mechanical parts are required to undergo MoS₂ (Molybdenum Disulfide) coating to prevent cold welding in space environments.
 
----
 
 ## Funding
 
 This project was fully funded by TakeMe2Space.
 
----
 
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
----
 
 ## Contact
 
 For questions or support, contact: [r.vortex@tm2.space](mailto:r.vortex@tm2.space)
 
----
 
 ## Changelog
 
 - **Version 1**: Initial release
 
----
 
 ## FAQ
 
@@ -185,7 +193,7 @@ A: Anyone! The design is fully open-source under the MIT License. You are free t
 A: Version 2 is planned for release soon and will include improvements in assembly and fixes based on lessons learned from Version 1.
 
 **Q: Where can I find detailed assembly instructions?**  
-A: A comprehensive "How to Build an HDRM" guide will be released on 1 August.
+A: A comprehensive "How to Build an HDRM" guide will be released soon.
 
 **Q: What software do I need to view or modify the design files?**  
 A: For electronics, use KiCad (for schematic and PCB). For mechanical parts, use any CAD software that supports STEP and PDF files.
@@ -196,8 +204,44 @@ A: The datasheet provides technical specifications, operational details, and key
 **Q: Can I request new features or report bugs?**  
 A: Yes! Please open an issue in this repository or contact us directly at r.vortex@tm2.space.
 
+**Q: Where can I get an HDRM fabricated?**  
+A: The HDRM is designed to be manufactured using widely available services:
+- **PCBs:** You can use PCB fabrication services such as [Robu](https://robu.in/product-category/electronics/pcb/pcb-manufacturing/), [PCB Power](https://www.pcbpower.com/), JLCPCB, PCBWay, or any local PCB manufacturer. Simply send them the Gerber files provided in this repository.
+- **Electronic Components:** Components can be sourced from major distributors like [Mouser](https://www.mouser.com/), [Digi-Key](https://www.digikey.com/), LCSC, or your preferred local supplier. Refer to the BOM for part numbers.
+- **Machined Parts:** For mechanical parts, you can approach local machine shops or use online CNC machining services. There is no single global solution—choose a supplier that can meet the tolerances and material requirements specified in the drawings. Always share the STEP and PDF files with your machinist for clarity.
+
 **Q: Are there any recommended suppliers for manufacturing?**  
-A: While the design is open and can be manufactured by any capable supplier, we recommend reviewing the drawings for the process requirements.
+A: While the design is open and can be manufactured by any capable supplier, we recommend reviewing the drawings for the process requirements. See the previous answer for specific suggestions on PCB, component, and machining suppliers.
+
+**Q: Is there a simulation or test data available?**  
+A: Test data and simulation results may be included in future releases or upon request. Please contact us for more information.
+
+**Q: Where can I find the recommended torque values for fasteners?**  
+A: The specific torquing information for all fasteners will be provided after we complete vibration testing of our HDRM. Please stay tuned for updates in future releases.
+
+**Q: What is a Hold-Down and Release Mechanism (HDRM)?**  
+A: An HDRM is a device used in spacecraft to keep parts like antennas or solar panels locked during launch, and then release them in space when needed.
+
+**Q: What is a CubeSat?**  
+A: A CubeSat is a small, standardized satellite, often used for research, education, or technology demonstration in space.
+
+**Q: What is a PCB?**  
+A: PCB stands for Printed Circuit Board. It is the board that holds and connects all the electronic components.
+
+**Q: What are Gerber files?**  
+A: Gerber files are special files you send to a PCB manufacturer so they can make your circuit board.
+
+**Q: What is a Bill of Materials (BOM)?**  
+A: A BOM is a list of all the parts you need to build something, including quantities and where to buy them.
+
+**Q: What is CNC milling?**  
+A: CNC milling is a way to cut and shape metal parts using computer-controlled machines for high precision.
+
+**Q: What is NiTi SMA wire?**  
+A: NiTi SMA stands for Nickel-Titanium Shape Memory Alloy wire. It changes shape when heated and is used as an actuator in this HDRM.
+
+**Q: I have never built anything like this before. Can I do it?**  
+A: Yes! This guide and the included files are designed to help even beginners. Just follow the steps, and don’t hesitate to look up terms or ask for help.
 
 **Q: Is there a simulation or test data available?**  
 A: Test data and simulation results may be included in future releases or upon request. Please contact us for more information.
@@ -207,7 +251,68 @@ A: You can cite the project using the repository URL or reference the technical 
 
 ---
 
-## Folder Structure
+## Safety Warnings
+
+- **Sharp Edges:** Machined metal parts may have sharp edges. Handle with care and deburr as needed.
+- **Electrical Safety:** When testing the PCB or HDRM, always use a current-limited power supply. Avoid short circuits and do not touch exposed conductors while powered.
+- **NiTi SMA Wire:** The shape memory wire heats up rapidly during actuation. Do not touch the wire during or immediately after activation.
+- **Spring Tension:** The bias spring is under tension. Take care during assembly and disassembly to avoid sudden release.
+- **Chemicals and Coatings:** Use gloves and proper ventilation when applying MoS₂ or cleaning agents.
+- **Eye Protection:** Always wear safety glasses when working with tools, springs, or under tension.
+
+---
+
+## Troubleshooting
+
+**Problem:** PCB does not power up or actuation does not occur  
+**Solution:**
+- Double-check all solder joints for bridges or cold joints.
+- Verify correct component placement and orientation (see BOM and schematic).
+- Ensure power supply is set to 5V and can deliver at least 2A.
+- Check for shorts or open circuits with a multimeter.
+
+**Problem:** Mechanical parts do not fit or move smoothly  
+**Solution:**
+- Inspect all parts for burrs or debris; clean and deburr as needed.
+- Verify all dimensions and tolerances match the drawings.
+- Ensure MoS₂ coating is applied to all sliding surfaces.
+- Check for correct assembly order and orientation.
+
+**Problem:** NiTi SMA wire does not contract or actuate  
+**Solution:**
+- Confirm the wire is the correct length (64 mm between crimps) and properly crimped.
+- Ensure good electrical connection at the standoffs and terminals.
+- Verify the power supply is delivering enough current (2A).
+- Replace the wire if it has been overheated or damaged.
+
+**Problem:** Spring or slider launches unexpectedly during assembly  
+**Solution:**
+- Always assemble with the spring compressed in a controlled manner.
+- Wear eye protection and keep hands clear of the spring path.
+
+If you encounter other issues, please open an issue on GitHub or contact the project maintainers for help.
+
+
+## Glossary
+
+| Term / Acronym | Meaning |
+|:-------------- |:--------|
+| **HDRM**       | Hold-Down and Release Mechanism – a device that locks and then releases parts (like antennas or solar panels) on a spacecraft |
+| **CubeSat**    | A small, standardized satellite, typically 10x10x10 cm units, used for research and education |
+| **PCB**        | Printed Circuit Board – the board that holds and connects electronic components |
+| **Gerber Files** | Standard files used to manufacture PCBs |
+| **BOM**        | Bill of Materials – a list of all parts needed to build the device |
+| **CNC Milling**| Computer-controlled machining process for precise metal parts |
+| **NiTi SMA Wire** | Nickel-Titanium Shape Memory Alloy wire – changes shape when heated, used as an actuator |
+| **ICD**        | Interface Control Document – defines how the HDRM connects to the rest of the satellite |
+| **STEP File**  | A 3D CAD file format used for sharing mechanical models |
+| **MoS₂**       | Molybdenum Disulfide – a coating to prevent metal parts from sticking in space |
+| **TML/CVCM**   | Total Mass Loss/Collected Volatile Condensable Material – measures of material outgassing in vacuum |
+| **SMA**        | Shape Memory Alloy – a metal that returns to a preset shape when heated |
+| **CAM**        | Computer-Aided Manufacturing – software for programming CNC machines |
+| **Standoff**   | A spacer used to mount the PCB securely inside the housing |
+| **Crimp Terminal** | A connector attached to a wire by squeezing (crimping) it |
+
 
 ```
 HDRM/
