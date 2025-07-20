@@ -1,3 +1,20 @@
+
+**This repository contains everything required to build, modify, and manufacture a complete CubeSat Hold-Down and Release Mechanism (HDRM): all mechanical, electronic, and documentation files are included.**
+
+---
+
+## What's Included
+
+- ✅ Complete mechanical CAD files (STEP, PDF drawings)
+- ✅ Electronics design files (schematic, PCB, Gerbers)
+- ✅ Full Bills of Materials (BOM) for both mechanical and electronics
+- ✅ Interface Control Document (ICD)
+- ✅ Technical datasheet
+- [ ] Assembly images and renders *(work in progress)*
+- [ ] Demo video *(work in progress)*
+- [ ] Comprehensive documentation and project paper *(work in progress)*
+
+
 # HDRM (Hold-Down and Release Mechanism) for CubeSats
 # HDRM (Version 1)
 
