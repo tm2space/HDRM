@@ -15,6 +15,7 @@ This repository provides a fully open-source HDRM design specifically intended f
 
 ## Quick Links
 
+- [Specifications](#specifications)
 - [See HDRM in Action](#see-hdrm-in-action)
 - [Image Previews](#image-previews)
 - [Build Instructions](#build-instructions)
@@ -28,19 +29,33 @@ This repository provides a fully open-source HDRM design specifically intended f
 
 **With Cover:**
 
-![HDRM with cover](images/cover.jpg)
+<img src="images/cover.jpg" alt="HDRM with cover" width="350"/>
 
 **Without Cover:**
 
-![HDRM without cover](images/no%20cover.jpg)
+<img src="images/no cover.jpg" alt="HDRM without cover" width="350"/>
 
 ---
 
+
+
+## Specifications (Summary)
+
+- **Power Input:** 5 V DC
+- **Current:** 2 A
+- **Max Release Preload:** ≈ 3.5 N
+- **Maximum Allowable Preload (Launch):** ≈ 1500 N
+- **Actuation Time:** < 2 seconds
+- **Vacuum Compatibility:** <1% TML, <0.1% CVCM (ASTM E595)
+- **Dimensions:** 45 × 22 × 6.5 mm
+- **Enclosure Material:** Aluminum 6061 T6
+- **Connector:** 3-pin Molex pico-blade
+
+For a full list of technical specifications, please refer to the [HDRM Datasheet_Ver_1.pdf](HDRM%20Datasheet_Ver_1.pdf) included in this repository.
+
 ## See HDRM in Action
 
-<video src="HDRM.mp4" controls style="max-width: 400px; width: 100%; border-radius: 8px;">
-  Your browser does not support the video tag.
-</video>
+[Watch the HDRM demonstration video (HDRM.mp4)](HDRM.mp4)
 
 ---
 
