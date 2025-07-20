@@ -1,6 +1,3 @@
-
-
-
 # HDRM (Version 1)
 
 A Hold-Down and Release Mechanism (HDRM) is a critical device used in spacecraft to securely restrain deployable components—such as antennas, solar panels, or other movable parts—during launch, and then reliably release them once the spacecraft is in orbit. HDRMs play a vital role in ensuring that sensitive or movable elements remain safely stowed during launch vibrations and accelerations, and are only deployed when needed in space.
@@ -17,6 +14,13 @@ This repository provides a fully open-source HDRM design specifically intended f
 **Without Cover:**  
 ![HDRM without cover](images/no%20cover.jpg)
 
+
+
+## See HDRM in Action
+
+<video src="HDRM.mp4" controls style="max-width: 400px; width: 100%; border-radius: 8px;">
+  Your browser does not support the video tag.
+</video>
 
 ## Funding
 
@@ -59,7 +63,7 @@ A: The datasheet provides technical specifications, operational details, and key
 A: Yes! Please open an issue in this repository or contact us directly at r.vortex@tm2.space.
 
 **Q: Are there any recommended suppliers for manufacturing?**  
-A: While the design is open and can be manufactured by any capable supplier, we recommend reviewing the BOM and datasheet for material and process requirements.
+A: While the design is open and can be manufactured by any capable supplier, we recommend reviewing the drawings for the process requirements.
 
 **Q: Is there a simulation or test data available?**  
 A: Test data and simulation results may be included in future releases or upon request. Please contact us for more information.
