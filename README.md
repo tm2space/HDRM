@@ -1,20 +1,55 @@
 # HDRM (Version 1)
 
-A Hold-Down and Release Mechanism (HDRM) is a critical device used in spacecraft to securely restrain deployable components—such as antennas, solar panels, or other movable parts—during launch, and then reliably release them once the spacecraft is in orbit. HDRMs play a vital role in ensuring that sensitive or movable elements remain safely stowed during launch vibrations and accelerations, and are only deployed when needed in space.
+## Overview
 
-> **Note:** This is Version 1 of the HDRM. It is currently being tested. Version 2 will be released soon, featuring significant improvements in assembly and fixes based on lessons learned from this first design.
+A Hold-Down and Release Mechanism (HDRM) is a critical device used in spacecraft to securely restrain deployable components—such as antennas, solar panels, or other movable parts—during launch, and then reliably release them once the spacecraft is in orbit. HDRMs play a vital role in ensuring that sensitive or movable elements remain safely stowed during launch vibrations and accelerations, and are only deployed when needed in space.
 
 This repository provides a fully open-source HDRM design specifically intended for CubeSat missions. All design files are included and can be freely used, modified, and manufactured by anyone interested in building their own CubeSat HDRM. By sharing these resources openly, the project aims to lower barriers for small satellite developers and support the growing ecosystem of accessible space hardware.
 
+> **Note:** This is Version 1 of the HDRM. It is currently being tested. Version 2 will be released soon, featuring significant improvements in assembly and fixes based on lessons learned from this first design.
+
+---
+
+## Quick Links
+
+- [See HDRM in Action](#see-hdrm-in-action)
+
+# HDRM (Version 1)
+
+> **Note:** This is Version 1 of the HDRM. It is currently being tested. Version 2 will be released soon, featuring significant improvements in assembly and fixes based on lessons learned from this first design.
+
+---
+
+## Overview
+
+A Hold-Down and Release Mechanism (HDRM) is a critical device used in spacecraft to securely restrain deployable components—such as antennas, solar panels, or other movable parts—during launch, and then reliably release them once the spacecraft is in orbit. HDRMs play a vital role in ensuring that sensitive or movable elements remain safely stowed during launch vibrations and accelerations, and are only deployed when needed in space.
+
+This repository provides a fully open-source HDRM design specifically intended for CubeSat missions. All design files are included and can be freely used, modified, and manufactured by anyone interested in building their own CubeSat HDRM. By sharing these resources openly, the project aims to lower barriers for small satellite developers and support the growing ecosystem of accessible space hardware.
+
+---
+
+## Quick Links
+
+- [See HDRM in Action](#see-hdrm-in-action)
+- [Image Previews](#image-previews)
+- [Build Instructions](#build-instructions)
+- [Post-Processing and Surface Treatment](#post-processing-and-surface-treatment)
+- [FAQ](#faq)
+- [Folder Structure](#folder-structure)
+
+---
+
 ## Image Previews
 
-**With Cover:**  
+**With Cover:**
+
 ![HDRM with cover](images/cover.jpg)
 
-**Without Cover:**  
+**Without Cover:**
+
 ![HDRM without cover](images/no%20cover.jpg)
 
-
+---
 
 ## See HDRM in Action
 
@@ -22,25 +57,43 @@ This repository provides a fully open-source HDRM design specifically intended f
   Your browser does not support the video tag.
 </video>
 
-## Funding
-
-This project was fully funded by TakeMe2Space.
+---
 
 ## Build Instructions
 
 We are working on a detailed "How to Build an HDRM" guide, which will be released on **1 August**.
 
+---
+
+## Post-Processing and Surface Treatment
+
+For detailed post-processing information, refer to the file `HDRM-BOM.xlsx` included in this repository. Most mechanical parts are required to undergo MoS₂ (Molybdenum Disulfide) coating to prevent cold welding in space environments.
+
+---
+
+## Funding
+
+This project was fully funded by TakeMe2Space.
+
+---
+
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
 
 ## Contact
 
 For questions or support, contact: [r.vortex@tm2.space](mailto:r.vortex@tm2.space)
 
+---
+
 ## Changelog
 
 - **Version 1**: Initial release
+
+---
 
 ## FAQ
 
@@ -71,6 +124,7 @@ A: Test data and simulation results may be included in future releases or upon r
 **Q: How do I cite this project in my research or documentation?**  
 A: You can cite the project using the repository URL or reference the technical paper included in the `Paper/` directory.
 
+---
 
 ## Folder Structure
 
