@@ -11,7 +11,7 @@
 - ✅ Interface Control Document (ICD)
 - ✅ Technical datasheet
 - [ ] Assembly images and renders *(work in progress)*
-- [ ] Demo video *(work in progress)*
+- ✅ Demo video ([watch here](https://drive.google.com/file/d/1jrq6xz-sBspF4B87YtnGfVCLkF1sXMoq/view?usp=sharing))
 - [ ] Additional documentation *(work in progress)*
 - ✅ Technical project paper (see `Paper/Hold-Down and Release Mechanism for CubeSats.pdf`)
 
@@ -33,9 +33,9 @@ This repository provides a fully open-source HDRM design specifically intended f
 
 ## Quick Links
 
+- [Image Previews](#image-previews)
 - [Specifications](#specifications)
 - [See HDRM in Action](#see-hdrm-in-action)
-- [Image Previews](#image-previews)
 - [Build Instructions](#build-instructions)
 - [Post-Processing and Surface Treatment](#post-processing-and-surface-treatment)
 - [FAQ](#faq)
