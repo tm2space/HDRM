@@ -13,18 +13,6 @@
 
 ---
 
-## What's Included
-
-- ✅ Complete mechanical CAD files (STEP, PDF drawings)
-- ✅ Electronics design files (schematic, PCB, Gerbers)
-- ✅ Full Bills of Materials (BOM) for both mechanical and electronics
-- [ ] Interface Control Document (ICD) *(work in progress)*
-- ✅ Technical datasheet
-- [ ] Assembly images and renders *(work in progress)*
-- ✅ Demo video ([watch here](https://drive.google.com/file/d/1jrq6xz-sBspF4B87YtnGfVCLkF1sXMoq/view?usp=sharing))
-- [ ] Additional documentation *(work in progress)*
-- ✅ Technical project paper (see `Paper/Hold-Down and Release Mechanism for CubeSats.pdf`)
-
 ![TakeMe2Space](https://static.wixstatic.com/media/0a87d6_b9364c6571424f059bfbb9860dbfcbe0~mv2.png/v1/fill/w_552,h_128,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tm2s%20logo%20320x132.png)
 # TM2S HDRM (Hold-Down and Release Mechanism)
 # HDRM (Version 1)
@@ -38,6 +26,20 @@
 A Hold-Down and Release Mechanism (HDRM) is a critical device used in spacecraft to securely restrain deployable components—such as antennas, solar panels, or other movable parts—during launch, and then reliably release them once the spacecraft is in orbit. HDRMs play a vital role in ensuring that sensitive or movable elements remain safely stowed during launch vibrations and accelerations, and are only deployed when needed in space.
 
 This repository provides a fully open-source HDRM design specifically intended for CubeSat missions. All design files are included and can be freely used, modified, and manufactured by anyone interested in building their own CubeSat HDRM. By sharing these resources openly, the project aims to lower barriers for small satellite developers and support the growing ecosystem of accessible space hardware.
+
+---
+
+## What's Included
+
+- ✅ Complete mechanical CAD files (STEP, PDF drawings)
+- ✅ Electronics design files (schematic, PCB, Gerbers)
+- ✅ Full Bills of Materials (BOM) for both mechanical and electronics
+- [ ] Interface Control Document (ICD) *(work in progress)*
+- ✅ Technical datasheet
+- [ ] Assembly images and renders *(work in progress)*
+- ✅ Demo video ([watch here](https://drive.google.com/file/d/1jrq6xz-sBspF4B87YtnGfVCLkF1sXMoq/view?usp=sharing))
+- [ ] Additional documentation *(work in progress)*
+- ✅ Technical project paper (see `Paper/Hold-Down and Release Mechanism for CubeSats.pdf`)
 
 ---
 
