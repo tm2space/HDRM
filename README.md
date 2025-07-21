@@ -18,7 +18,7 @@
 - ✅ Complete mechanical CAD files (STEP, PDF drawings)
 - ✅ Electronics design files (schematic, PCB, Gerbers)
 - ✅ Full Bills of Materials (BOM) for both mechanical and electronics
-- ✅ Interface Control Document (ICD)
+- [ ] Interface Control Document (ICD) *(work in progress)*
 - ✅ Technical datasheet
 - [ ] Assembly images and renders *(work in progress)*
 - ✅ Demo video ([watch here](https://drive.google.com/file/d/1jrq6xz-sBspF4B87YtnGfVCLkF1sXMoq/view?usp=sharing))
@@ -97,13 +97,13 @@ Below is a detailed step-by-step guide to building the HDRM. Please refer to the
 ### Step 1: Manufacturing of Parts
 
 - **Mechanical Parts:**
-  - Fabricate all mechanical components as per the technical drawings in `Mechanical/PDF/` (e.g., [H-Base](Mechanical/PDF/SP-RMH-001%20v2.pdf), [H-Cover](Mechanical/PDF/SP-RMH-003.pdf), [H-Slider](Mechanical/PDF/SP-RMH-005%20v1.pdf), [H-Spring](Mechanical/PDF/SP-RMH-004.pdf), [H-Bush](Mechanical/PDF/SP-RHM-006%20v2.pdf), [H-nut](Mechanical/PDF/SP-RMH-002.pdf)).
-  - Use high-tolerance [CNC milling machining](https://en.wikipedia.org/wiki/CNC_milling) for all parts to ensure precise fits and reliable operation. Tolerances should match those specified in the drawings (maximum ±0.05 mm for critical features).
-  - Use the [3D models](Mechanical/STEP/) in `Mechanical/STEP/` for reference and [CAM programming](https://en.wikipedia.org/wiki/Computer-aided_manufacturing).
+  - Fabricate all mechanical components as per the technical drawings in `Mechanical/Part Drawings/` (e.g., [H-Base](Mechanical/PDF/SP-RMH-001%20v2.pdf), [H-Cover](Mechanical/PDF/SP-RMH-003.pdf), [H-Slider](Mechanical/PDF/SP-RMH-005%20v1.pdf), [H-Spring](Mechanical/PDF/SP-RMH-004.pdf), [H-Bush](Mechanical/PDF/SP-RHM-006%20v2.pdf), [H-nut](Mechanical/PDF/SP-RMH-002.pdf)).
+  - Use high-tolerance [CNC milling machining](https://en.wikipedia.org/wiki/CNC_milling) for all parts to ensure precise fits and reliable operation. Tolerances should match those specified in the drawings.
+  - Use the [3D models](Mechanical/3D CAD/) in `Mechanical/3D CAD/` for reference and [CAM programming](https://en.wikipedia.org/wiki/Computer-aided_manufacturing).
   - Recommended material: [Aluminum 6061 T6](https://en.wikipedia.org/wiki/6061_aluminium_alloy) for all parts except the H-nut, which should be made from [stainless steel (SS)](https://en.wikipedia.org/wiki/Stainless_steel).
 - **PCB:**
   - Manufacture the PCB using the [Gerber files](https://en.wikipedia.org/wiki/Gerber_format) in `Hardware/Horizontal_HDRM_V1 - Gerbers.zip`. Gerber files are standard manufacturing files for PCBs—simply send them to any PCB fabrication service.
-  - Use the schematic and layout in the [KiCad](https://kicad.org/) project (`Hardware/HDRM-kicad files.zip`) for reference. KiCad is a free, open-source tool for viewing and editing electronic designs.
+  - Use the schematic and layout in the Altium project (`Hardware/EDA Files`) for reference.
 - **Electronics:**
   - Procure all electronic components as listed in the [Bill of Materials (BOM)](Hardware/electronics%20BOM.xls`). The BOM is a spreadsheet listing all required parts, quantities, and recommended suppliers.
 
@@ -111,7 +111,7 @@ Below is a detailed step-by-step guide to building the HDRM. Please refer to the
 
 - **Surface Treatment:**
   - Clean all parts to remove machining residues and contaminants.
-  - Apply [MoS₂ (Molybdenum Disulfide)](https://en.wikipedia.org/wiki/Molybdenum_disulfide) coating—a dry lubricant—to all sliding/contact mechanical parts. MoS₂ can be applied using the [Ion Exchange Coating method](https://en.wikipedia.org/wiki/Ion_exchange) or with an aerosol spray (ensure uniform coverage for best results). This prevents [cold welding](https://en.wikipedia.org/wiki/Cold_welding) in space.
+  - Apply [MoS₂ (Molybdenum Disulfide)](https://en.wikipedia.org/wiki/Molybdenum_disulfide) coating (a dry lubricant) to all sliding/contact mechanical parts. MoS₂ can be applied using the [Ion Exchange Coating method](https://en.wikipedia.org/wiki/Ion_exchange) or with an aerosol spray (ensure uniform coverage for best results). This prevents [cold welding](https://en.wikipedia.org/wiki/Cold_welding) in space. The thickness of the coat should be ~1-2 microns
 - **Inspection:**
   - Verify all critical dimensions and tolerances per the drawings.
   - Ensure all threaded holes and fits are within specification.
@@ -119,7 +119,7 @@ Below is a detailed step-by-step guide to building the HDRM. Please refer to the
 ### Step 3: Assembly
 
 - **Sub-Assembly:**
-  - Assemble mechanical subcomponents (e.g., slider, spring, bush) as per the assembly drawing (`Mechanical/STEP/SP-RHM-000.step`).
+  - Assemble mechanical subcomponents (e.g., slider, spring, bush) as per the assembly drawing (`Mechanical/3D CAD/SP-RHM-000.step`).
   - Use appropriate fasteners and ensure correct orientation of all parts.
 - **PCB Assembly:**
   - Solder all components onto the PCB as per the schematic and BOM.
@@ -318,19 +318,19 @@ If you encounter other issues, please open an issue on GitHub or contact the pro
 HDRM/
 ├── Hardware/                         # Electronics and PCB design files
 │   ├── electronics BOM.xls            # Bill of Materials for electronics
-│   ├── HDRM-kicad files.zip           # KiCad project files (schematic & PCB)
+│   ├── EDA Files                      # Altium project files (schematic & PCB)
 │   └── Horizontal_HDRM_V1 - Gerbers.zip # Gerber files for PCB manufacturing
 ├── Mechanical/                        # Mechanical design files and documentation
 │   ├── HDRM-BOM.xlsx                  # Bill of Materials for mechanical parts
 │   ├── RMV-RMH ICD v1.pdf             # Interface Control Document (ICD) for RMV-RMH, version 1
-│   ├── PDF/                           # Mechanical drawings (PDF)
+│   ├── 3D CAD/                           # Mechanical drawings (PDF)
 │   │   ├── SP-RMH-001 v2.pdf          # H-Base: Drawing for part SP-RMH-001, version 2
 │   │   ├── SP-RMH-002.pdf             # H-nut: Drawing for part SP-RMH-002
 │   │   ├── SP-RMH-003.pdf             # H-Cover: Drawing for part SP-RMH-003
 │   │   ├── SP-RMH-004.pdf             # H-Spring: Drawing for part SP-RMH-004
 │   │   ├── SP-RMH-005 v1.pdf          # H-Slider: Drawing for part SP-RMH-005, version 1
 │   │   └── SP-RHM-006 v2.pdf          # H-Bush: Drawing for part SP-RHM-006, version 2
-│   ├── STEP/                          # 3D models (STEP format)
+│   ├── Part Drawings/                          # 3D models (STEP format)
 │   │   ├── SP-RHM-000.step            # 3D model for assembly SP-RHM-000
 │   │   ├── SP-RMH-001.step            # H-Base: 3D model for part SP-RMH-001
 │   │   ├── SP-RMH-002.step            # H-nut: 3D model for part SP-RMH-002
