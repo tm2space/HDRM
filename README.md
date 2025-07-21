@@ -9,8 +9,6 @@
   <a href="https://drive.google.com/file/d/1jrq6xz-sBspF4B87YtnGfVCLkF1sXMoq/view?usp=sharing"><img src="https://img.shields.io/badge/Demo-Video-blueviolet" alt="Demo Video"></a>
 </p>
 
-**This repository contains everything required to build, modify, and manufacture a complete CubeSat Hold-Down and Release Mechanism (HDRM): all mechanical, electronic, and documentation files are included.**
-
 ---
 
 ![TakeMe2Space](https://static.wixstatic.com/media/0a87d6_b9364c6571424f059bfbb9860dbfcbe0~mv2.png/v1/fill/w_552,h_128,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tm2s%20logo%20320x132.png)
