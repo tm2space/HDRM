@@ -25,8 +25,8 @@
 - [ ] Additional documentation *(work in progress)*
 - ✅ Technical project paper (see `Paper/Hold-Down and Release Mechanism for CubeSats.pdf`)
 
-
-# HDRM (Hold-Down and Release Mechanism) for CubeSats
+![TakeMe2Space](https://static.wixstatic.com/media/0a87d6_b9364c6571424f059bfbb9860dbfcbe0~mv2.png/v1/fill/w_552,h_128,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tm2s%20logo%20320x132.png)
+# TM2S HDRM (Hold-Down and Release Mechanism)
 # HDRM (Version 1)
 
 > **Note:** This is Version 1 of the HDRM. It is currently being tested. Version 2 will be released soon, featuring significant improvements in assembly and fixes based on lessons learned from this first design.
